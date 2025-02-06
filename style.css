@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(to bottom right, #e91e63, #ff9800);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2vh; /* Margen inferior relativo a la altura de la pantalla */
+  font-size: 2.5em; /* Tamaño de fuente relativo al tamaño de fuente base */
+}
+
+#carta {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3vh 2vw; /* Padding relativo a la altura y ancho de la pantalla */
+  margin: 3vh auto;
+  max-width: 90%; /* Ancho máximo relativo al ancho del contenedor padre */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#carta p {
+  margin-bottom: 1.5vh;
+  color: #333;
+  font-size: 1.2em;
+}
+
+#abrir-lista {
+  background-color: #fff;
+  color: #e91e63;
+  padding: 1.5vh 2vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+#abrir-lista:hover {
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 3vh auto;
+  max-width: 90%;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2vh 2vw;
+  margin-bottom: 1.5vh;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  font-size: 1.1em;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 235, 238, 0.8);
+}
+
+li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  display: none;
+}
+
+/* Media Queries (opcional) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #carta {
+    font-size: 0.9em;
+  }
+
+  #abrir-lista {
+    font-size: 0.9em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  li span {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #carta {
+    font-size: 0.8em;
+  }
+
+  #abrir-lista {
+    font-size: 0.8em;
+  }
+
+  li {
+    font-size: 0.9em;
+  }
+
+  li span {
+    font-size: 0.9em;
+  }
+}
