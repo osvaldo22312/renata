@@ -1,3 +1,4 @@
+
 body {
   background: linear-gradient(to bottom right, #e91e63, #ff9800);
   font-family: sans-serif;
@@ -6,34 +7,34 @@ body {
 h1 {
   text-align: center;
   color: #fff;
-  margin-bottom: 2vh; /* Margen inferior relativo a la altura de la pantalla */
-  font-size: 2.5em; /* Tamaño de fuente relativo al tamaño de fuente base */
+  margin-bottom: 2vh;
+  font-size: 2em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 #carta {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 3vh 2vw; /* Padding relativo a la altura y ancho de la pantalla */
-  margin: 3vh auto;
-  max-width: 90%; /* Ancho máximo relativo al ancho del contenedor padre */
+  padding: 2vh 2vw; /* Padding un poco más pequeño en general */
+  margin: 2vh auto;
+  max-width: 95%; /* Ancho máximo un poco más grande en celulares */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #carta p {
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
   color: #333;
-  font-size: 1.2em;
+  font-size: 1em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 #abrir-lista {
   background-color: #fff;
   color: #e91e63;
-  padding: 1.5vh 2vw;
+  padding: 1vh 1.5vw; /* Padding un poco más pequeño en general */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 1em;
+  font-size: 0.9em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 #abrir-lista:hover {
@@ -43,21 +44,21 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
-  margin: 3vh auto;
-  max-width: 90%;
+  margin: 2vh auto;
+  max-width: 95%; /* Ancho máximo un poco más grande en celulares */
 }
 
 li {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 2vh 2vw;
-  margin-bottom: 1.5vh;
+  padding: 1.5vh 1.5vw; /* Padding un poco más pequeño en general */
+  margin-bottom: 1vh;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   position: relative;
   color: #333;
-  font-size: 1.1em;
+  font-size: 0.9em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 li:hover {
@@ -70,51 +71,51 @@ li span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.2em;
+  font-size: 1em; /* Tamaño de fuente un poco más pequeño en general */
   display: none;
 }
 
 /* Media Queries (opcional) */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.8em; /* Tamaño de fuente un poco más pequeño en tabletas */
   }
 
   #carta {
-    font-size: 0.9em;
+    font-size: 0.85em; /* Tamaño de fuente un poco más pequeño en tabletas */
   }
 
   #abrir-lista {
-    font-size: 0.9em;
+    font-size: 0.85em; /* Tamaño de fuente un poco más pequeño en tabletas */
   }
 
   li {
-    font-size: 1em;
+    font-size: 0.85em; /* Tamaño de fuente un poco más pequeño en tabletas */
   }
 
   li span {
-    font-size: 1em;
+    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño en tabletas */
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Tamaño de fuente un poco más pequeño en celulares */
   }
 
   #carta {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Tamaño de fuente un poco más pequeño en celulares */
   }
 
   #abrir-lista {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Tamaño de fuente un poco más pequeño en celulares */
   }
 
   li {
-    font-size: 0.9em;
+    font-size: 0.8em; /* Tamaño de fuente un poco más pequeño en celulares */
   }
 
   li span {
-    font-size: 0.9em;
+    font-size: 0.85em; /* Tamaño de fuente un poco más pequeño en celulares */
   }
 }
