@@ -34,7 +34,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 0.9em; /* Tamaño de fuente un poco más pequeño en general */
+  font-size: 1.5em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 #abrir-lista:hover {
@@ -58,7 +58,7 @@ li {
   cursor: pointer;
   position: relative;
   color: #333;
-  font-size: 0.9em; /* Tamaño de fuente un poco más pequeño en general */
+  font-size: 1.5em; /* Tamaño de fuente un poco más pequeño en general */
 }
 
 li:hover {
